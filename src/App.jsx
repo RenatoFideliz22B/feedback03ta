@@ -20,7 +20,7 @@ export function App(){
       </div>
 
 
-      <button>Submit</button>
+      <button className="bg-orange w-full py-3 rounded-3xl uppercase text-sm tracking-1">Submit</button>
     </div>
   )
 }
