@@ -2,10 +2,6 @@ import iconStar from "../assets/icon-star.svg"
 import { InputButton } from "./InputButton"
 
 export function CardInicial({ nota, setNota, setSubmited }) {
-    function handleTrocarNota(nota) {
-        setNota(nota)
-      }
-
       function handleSubmit() {
         if (nota !== 0) {
           setSubmited(true)
@@ -27,11 +23,11 @@ export function CardInicial({ nota, setNota, setSubmited }) {
 
       <div className="flex justify-between mb-6">
         
-       <InputButton valor={1} handleTrocarNota={handleTrocarNota} />
-       <InputButton valor={2} handleTrocarNota={handleTrocarNota} />
-       <InputButton valor={3} handleTrocarNota={handleTrocarNota} />
-       <InputButton valor={4} handleTrocarNota={handleTrocarNota} />
-       <InputButton valor={5} handleTrocarNota={handleTrocarNota} />
+       <InputButton valor={1} setNota={setNota} />
+       <InputButton valor={2} setNota={setNota} />
+       <InputButton valor={3} setNota={setNota} />
+       <InputButton valor={4} setNota={setNota} />
+       <InputButton valor={5} setNota={setNota} />
       </div>
 
 
